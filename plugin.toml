@@ -1,0 +1,22 @@
+id = "monitor-tools/monitor-position"
+name = "Monitor Position"
+version = "1.0.0"
+plugin_api = 24
+author = "Monitor Position contributors"
+license = "MIT"
+icon = "device-desktop"
+description = "Position monitors and align edges or centers for the current session."
+dependencies = ["python3", "hyprctl"]
+tags = ["hyprland", "display", "utility"]
+
+[[widget]]
+id = "bar"
+entry = "bar.luau"
+
+[[panel]]
+id = "panel"
+entry = "panel.luau"
+width = 520
+height = 520
+placement = "floating"
+position = "center"
